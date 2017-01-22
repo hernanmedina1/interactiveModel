@@ -15,7 +15,11 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for number of bins
   sidebarLayout(
        sidebarPanel('Data used in this app is the kid.weights dataset from package UsingR.
-                    Variables are gender, age (months), weight (pounds), and height (inches).',
+                    Variables are gender, age (months), weight (pounds), and height (inches).
+                    You can change the plot and the linear regression by changing the gender
+                    (male of female) or the independent variable (age or height)). When you
+                    do that, the regression formula changes, the plot elements change, and
+                    the footnote below the plot changes.',
 
              selectInput('dsubset', 'Choose Male or Female:',
                          choices = c('Female' = 'F',
